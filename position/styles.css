@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e9ee;
+    padding: 40px;
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-box img {
+    position:absolute;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card {
+    position: absolute;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 6px;
+}
+
+.red-card {
+    top: 120px;
+    right: 0;
+    background-color: #c8102e;
+    color: white;
+    width: 240px;
+}
+
+.red-card .tag {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.red-card .credit {
+    font-size: 12px;
+}
+
+.red-card a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.white-card {
+    bottom: -40px;
+    right: 0;
+    background-color: white;
+    color: black;
+    width: 400px;
+}
+
+.white-card h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.white-card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.white-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.white-card button:hover {
+    background-color: #f0f0f0;
+}
+.grey-card {
+    background-color: grey;
+    color: white;
+    width: 200px;
+    height: 100%;
+    z-index: -2;
+
+.grey-card h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.grey-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: white;
+}

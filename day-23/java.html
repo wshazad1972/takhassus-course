@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <style>
+        #heading {
+            color: blue;
+        }
+    </style>
+</head>
+<h1 id="heading">AHRAM HOUSE</h1>
+<p id="para">Best Ahram for Hajj & Umrah</p>
+<p id="Types"></p>
+<p id="more"></p>
+
+<body>
+    <script>
+        let myheading = document.getElementById("heading").innerText="welcome to our shop";
+        let mypara = document.getElementById("para");
+        console.log(myheading);
+        console.log(mypara);
+         console.log(myheading.innerText);
+        console.log(mypara.innerText);
+console.log(myheading.innerHTML);
+console.log(mypara.innerHTML);
+document.getElementById("Types").innerText="A lot of types here";
+let msg="all necessories of ahram availabl";
+document.getElementById("more").innerHTML=msg;
+let heading=document.getElementById("heading");
+heading.style.color="red";
+heading.style.backgroundColor="yellow";
+heading.style.textAlign="center";
+
+        
+    </script>
+</body>
+
+</html>

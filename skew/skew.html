@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Skew</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            /* 2 columns for larger screens */
+            grid-template-columns: repeat(2, 1fr);
+            gap: 80px; /* Increased gap for better spacing */
+            text-align: center;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .box:hover {
+            background-color: #2980b9;
+            transform: scale(1.1); /* Add a hover effect */
+        }
+        
+        /* Applying skew transformations */
+        .box1 {
+            /* Skews the element along the X-axis by 20 degrees */
+            transform: skewX(20deg);
+        }
+
+        .box2 {
+            /* Skews the element along the Y-axis by 20 degrees */
+            transform: skewY(20deg);
+        }
+
+        .box3 {
+            /* Skews along X-axis by 20deg and Y-axis by 10deg */
+            transform: skew(20deg, 10deg);
+        }
+
+        .box4 {
+            /* Skews in the opposite direction */
+            transform: skew(-20deg, -10deg);
+        }
+
+        /* Responsive layout for smaller screens */
+        /* @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box1">Box 1<br>ابو بکر</div>
+        <div class="box box2">Box 2<br>عمر</div>
+        <div class="box box3">Box 3<br>عثمان</div>
+        <div class="box box4">Box 4<br>علی</div>
+        <div class="box"
+        رضی اللہ عنہم
+    </div>
+
+</body>
+</html>

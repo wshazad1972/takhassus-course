@@ -1,0 +1,105 @@
+<style>
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: black;
+        color: azure;
+    }
+
+    .logo {
+        font-size: 30px; /* fixed: "font: size 30px;" is invalid */
+        font-weight: bold;
+    }
+
+    .navbar ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar ul li {
+        cursor: pointer;
+    }
+
+    .slider {
+        width: 100%;
+        height: 300px;
+        border: 2px solid #ccc; /* fixed: was 'border:2px solidcolor' */
+        overflow: hidden;
+    }
+
+    .slider img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; /* fixed: was 'object-fit= fill' */
+    }
+
+    .cards {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-box {
+        border: 1px solid #ccc;
+        padding: 15px;
+        width: 250px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+    }
+
+    .card-box h2 {
+        margin-top: 0;
+    }
+</style>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">ARABIC LANGUAGE</div>
+    <ul>
+        <li>Home</li>
+        <li>Chapters</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+<!-- Slider -->
+<div class="slider">
+    <div class="slider-box">
+        <img src="slider1.jpeg" alt="Slide 1"/>
+        
+
+        <!-- You may use a JS slider if you want to rotate slides -->
+    </div>
+</div>
+
+<!-- Cards Section -->
+<div class="cards">
+    <!-- Card 1 -->
+    <div class="card-box">
+        <h2>Learn Arabic</h2>
+        <img src="slider2.jpeg" alt="Slide 2"/>
+        <p>Arabic is the most important language for learning Islam.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card-box">
+        <h2>Learn Quran</h2>
+        
+        <p>Arabic is the language of the Quran, and the Quran is the Kalam of ALLAH.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card-box">
+        <h2>Learn Hadees</h2><br>
+                    <img src="slider3.jpeg" alt="Slide 3"/>
+        <p>Arabic is the language of our Prophet, making it easier to understand the commands of ALLAH.</p>
+    </div>
+</div>

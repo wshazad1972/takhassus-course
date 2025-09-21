@@ -1,0 +1,24 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Noto Nastaliq Urdu', sans-serif; */
+    /* font-family:'aligarh arabic' ; */
+    font-family: 'ruqa-kht';
+    font-size: 50px;
+    color: red;
+    font-weight: 400;
+    direction: rtl;
+}
+
+/* get font fromlocal file */
+@font-face {
+    /* font-family: 'aligarh arabic'; */
+    font-family: 'ruqa-kht';
+    src: url(aref-ruqaa\Aref_Ruqaa\ArefRuqaa-Bold.ttf )format(truetype);
+    /* src: url(ruqa-kht.ttf) format('truetype'); */
+    /* src: url(url(aligarh-arabic-free-personal-use.zip)) */
+}
+

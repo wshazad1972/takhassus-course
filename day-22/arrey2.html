@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+    
+    , initial-scale=1.0">
+  <title>javascrip</title>
+</head>
+
+<body>
+
+  <p id="output"></p>
+
+
+  <script>
+   
+    const resultElement = document.getElementById("output");
+
+    const prayedfajr = prompt("Did you pray Fajr? (yes/no)") ;
+    const prayeddhuhr = prompt("Did you pray Dhuhr? (yes/no)") ;
+    const prayedasr = prompt("Did you pray Asr? (yes/no)") ;
+    const prayedmaghrib = prompt("Did you pray Maghrib? (yes/no)") ;
+    const prayedisha = prompt("Did you pray Isha? (yes/no)") ;
+
+    if (prayedfajr === "yes" && prayeddhuhr === "yes" && prayedasr === "yes" && prayedmaghrib === "yes" && prayedisha === "yes") {
+      resultElement.textContent = "ماشاءاللہ مکمل";
+    }
+    else if (prayedfajr === "yes" || prayeddhuhr === "yes" || prayedasr === "yes" || prayedmaghrib === "yes" || prayedisha === "yes") {
+      resultElement.textContent = "اچھی کوشش";
+    }
+    else {
+      resultElement.textContent = "نماز قضا ہوگئی";
+    }
+
+let output=document.getElementById("output");
+output.style.color="white";
+output.style.backgroundColor="black";
+output.style.textAlign="right";
+output.style.fontSize="100px";
+
+
+
+    // // جمعہ کی تیاری
+    // const isfriday = prompt("is today friday(yes/no)");
+    // const tookbath = prompt("did you take bath today(yes/no)");
+    // const woreperfium = prompt("did you wear perfium today(yes/no)");
+    // if (isfriday=="yes" && tookbath=="yes" && woreperfium=="yes") {
+    //   console.log("جمعہ کی تیاری مکمل")
+    // }else{
+    //   console.log("تیاری ادھوری")
+    // }
+     //arabic//
+    // console .log("Bismillah hir Rhaman nir Raheem")
+    // //نماز کی تیاری//
+    // const haswudu=true;
+    // const timeforprayer=true;
+    // if(haswudu && timeforprayer){
+    //   console.log("نماز پڑھو")
+    // }else{
+    //   console.log("نماز کے لئے تیاری کرو")
+    // }
+    // روزہ رکھنے کی شرط//
+    // const isramadan = false;
+    // const ishealthy = false;
+    // if (isramadan || ishealthy) {
+    //   console.log("روزہ فرض ہے")
+    // }
+    // else{
+    //   console.log("روزہ فرض نہیں")
+    // }
+    //صدقہ کرنے کی سہولت//
+    // const hascash=true;
+    // const hasfood=true;
+    // if(hascash || hasfood){
+    //   console.log("صدقہ کریں")
+    // }else{
+    //   console.log("صدقہ ممکن نہیں")
+    // }
+    //زکوۃ حساب//
+    // const goldtola=prompt("Enter gold amount you have");
+    // const money=prompt("enter money you have");
+    // if(goldtola>7.5||money>50000){
+    //   console.log("ذکوۃ واجب ہے")
+    // }else{
+    //   console.log("زکوۃ واجب نہیں ہے")}
+    // نماز قضا ہوگئی//
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>4 Divs with Images</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    /* Navbar styles */
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: black;
+        color: azure;
+    }
+
+    .logo img {
+        height: 50px; /* adjust as needed */
+    }
+
+    .navbar ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar ul li {
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* Slider styles */
+    .slider {
+        width: 100%;
+        border: 2px solid #ccc;
+        overflow: hidden;
+        height: 600px;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .slider-box {
+        display: flex;
+        width: calc(100% * 3);
+        height: 100%;
+        animation: slide 20s infinite;
+    }
+
+    .slider-box img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        33% {
+            transform: translateX(0);
+        }
+        66% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    /* Cards section */
+    .cards {
+        display: flex;
+        width: 100%        
+        padding: 100px;
+        justify-content:space-between;
+        background-color: white;
+    }
+
+    .card-box {
+        border: 1px solid #421509;
+        padding: 10px;
+        width: 100%;
+        height: 600px
+        border-radius: 8px;
+        box-shadow: 0 4px 8px;
+        background-color: ;
+        box-sizing: border-box;
+        justify-content: space-between;
+        object-fit: cover;
+
+    }
+
+    .card-box h2 {
+        margin-top: 0;
+        font-size: 1.5em;
+    }
+
+    /* Section with images and text */
+    .section {
+        margin: 2px;
+        padding: 20px;
+        background-color: #e6e0d8;
+
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        margin: 2px;
+        width: 100%
+    }
+
+    .images-div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .image-item {
+        width: 220px;
+        text-align: center;
+    }
+
+    .image-item img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    .caption {
+        font-size: 1em;
+        font-weight: bold;
+        margin:5px
+    }
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">
+        <img src="images (1).jpeg" alt="Logo" />
+    </div>
+    <ul>
+        <li>Home</li>
+        <li>Books</li>
+        <li>Quotes</li>
+        <li>False prophets</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+<!-- Slider -->
+<div class="slider">
+    <div class="slider-box">
+        <img src="images (2).jpeg" alt="Slide 1" />
+        <img src="hq720.jpg" alt="Slide 2" />
+        <img src="images.jpeg" alt="Slide 3" />
+    </div>
+</div>
+
+<!-- Content Sections -->
+<div class="section">
+    <div class="box" style="background-color: rgb(185, 159, 128);">
+            <div style="font-size:50px; font-weight; bold; align-items: start;">
+                <center><b><i>ختم نبوت كا مفهوم</i></b></center>
+            </div>
+        </div>
+        <div class="box" style="background-color: rgb(126, 86, 74);">
+            <div>
+                <h2 style=font-size: xx-large>
+                    <center><b><i></i>
+                            خَتْم کا مطلب ہے اختتام، اور نُبُوَّت کا مطلب ہے نبوت کا درجہ۔
+                            لہٰذا خَتْمِ نُبُوَّت سے مراد یہ ہے کہ:
+                            “نبوت کا دروازہ حضرت محمد ﷺ پر بند ہو چکا ہے، اور آپ ﷺ کے بعد کوئی نیا نبی نہیں آ سکتا۔”
+                            ختمِ نبوت کا موضوع اسلام کا ایک بنیادی اور اہم عقیدہ ہے۔ اس کا مطلب ہے کہ حضرت محمد ﷺ اللہ کے آخری نبی ہیں، اور آپ ﷺ کے بعد کوئی نیا نبی نہیں آ سکتا، نہ کسی بھی شکل میں – نہ شرعی، نہ غیر شرعی، نہ مستقل، نہ تابع۔
+                </h2></i></b></center>
+            </div>
+        </div>
+        
+
+<div class="section" style="background-color: rgb(185, 159, 128)";>
+    <div class="section-title">ختم نبوت سے متعلق کتابیں</div>
+    <!-- Images with captions -->
+    <div class="images-div">
+        <div class="image-item">
+            <img src="book3.jpeg" alt="کتاب 1" />
+            <div class="caption">مولانا زاہد الراشدی</div>
+        </div>
+        <div class="image-item">
+            <img src="book2.jpg" alt="کتاب 2" />
+            <div class="caption">مولانا قمر احمد عثمانی</div>
+        </div>
+        <div class="image-item">
+            <img src="book1.jpg" alt="کتاب 3" />
+            <div class="caption">مولانا یوسف لدہیانوی</div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="box" style="background-color: rgb(82, 65, 45);">
+            <div style="font-size:50px; font-weight; bold; align-items: start; mar">
+                <center><b><i>ختم نبوت سے متعلق اقوال</i></b></center>
+            </div>
+        </div>
+        <div class=" cards" style="display:flex; gap: 16px";>
+            <div class="card-box" style= "display:flex;">
+                <div><img src="download (1).jpeg"ait= "Card image" style="width: 100%; border-radius: 6px;"/></div>
+                <div><img src="download (2).jpeg"ait= "Card image2" style="width: 100%; border-radius: 6px;"/></div>
+                <div><img src="download.jpeg"ait= "Card image3" style="width: 100%; border-radius: 6px;"/></div>
+            </div>
+        </div>
+        <div class="section">
+    <div class="box" style="background-color: rgb(83, 69, 51);">
+            <div style="font-size:50px; font-weight; bold; align-items: start;margin:2px">
+                <center><b><i>ملعون مدعیان نبوت</i></b></center>
+            </div>
+        </div>
+
+<table border="7" style="background-color: rgb(119, 93, 93);">
+<tr>
+    <th><b>نام</b></th>
+    <th><b>احوال</b></th>
+    
+</tr>
+<tr>
+
+    <td style="font-size:xx-large">اصل نام: مسَیلمہ بن ثمامہ
+•	زمانہ: رسول اللہ ﷺ کے آخری دور میں
+•	علاقہ: یمامہ (جزیرہ عرب)
+•	دعویٰ: اس نے کہا کہ محمد ﷺ کے ساتھ اس کو بھی نبوت ملی ہے۔
+•	انجام: حضرت ابوبکرؓ کے دور میں جنگ یمامہ میں قتل ہوا۔</td>
+    <center><td style="font-size:xx-large;">مسَیلمہ کذّاب</mark></td></center>
+    
+</tr>
+<tr>
+    
+    <td style="font-size:xx-large">زمانہ: بعد از وفاتِ نبی ﷺ
+•	بعد میں اسلام قبول کر کے توبہ کر لی اور شہید ہوا۔</td>
+    <td style="font-size:xx-large"><mark></mark> طلیحہ بن خُویلد</mark></td>
+</tr>
+<tr>
+
+    <td style="font-size:xx-large">خود کو نبیہ کہتی تھی
+•	بعد میں مسیلمہ سے شادی کر لی
+•	بعد ازاں اسلام قبول کیا</td>
+    <td style="font-size:xx-large">سجاح بنت الحارث</mark></td>    
+</tr>
+<tr>
+
+    <td style="font-size:xx-large">زمانہ: برصغیر (19ویں صدی)
+•	دعویٰ: پہلے مجدد، پھر محدث، پھر "ظلّی" نبی ہونے کا دعویٰ کیا
+•	مذہب: قادیانیت (احمدیہ فرقہ)
+•	امت مسلمہ اور تمام مکاتبِ فکر (اہل سنت، دیوبندی، بریلوی، اہل حدیث، شیعہ) نے متفقہ طور پر اسے غیر مسلم اور مرتد قرار دیا۔</td>
+    <center><td style="font-size:xx-large">غلام احمد قادیانی (مرزا غلام احمد)</center></td>    
+</tr>
+</table>
+<div class="section">
+    <div class="box" style="background-color: rgb(83, 73, 60);">
+            <div style="font-size:50px; font-weight; bold; align-items: start; mar">
+                <center><b><i>ختم نبوت کا عقیدہ کیوں اہم ہے</i></b></center>
+            </div>
+        </div>
+<div class="section">
+    <div class="box" style="background-color: rgb(185, 159, 128);">
+            <div style="font-size:30px; font-weight; bold; align-items: start; mar">
+                <center><b><i>یہ ایمان کی بنیاد ہے — اگر کوئی شخص حضرت محمد ﷺ کے بعد کسی اور کو نبی مانے، تو وہ اسلام سے خارج ہو جاتا ہے۔
+2.	اس عقیدے کا تحفظ امتِ مسلمہ کی اجتماعی ذمہ داری ہے۔
+3.	اس عقیدے کے خلاف دعویٰ کرنے والے ہمیشہ امت میں فتنہ اور گمراہی کا سبب بنے۔
+________________________________________
+🛑 جو شخص ختم نبوت کا انکار کرے، اس کا حکم
+•	اجماعِ امت ہے کہ ایسا شخص مرتد (دائرہ اسلام سے خارج) ہے۔
+•	حضرت ابوبکرؓ نے جھوٹے مدعیانِ نبوت کے خلاف جہاد کیا۔
+•	موجودہ دور میں بھی تمام مکاتبِ فکر کا یہی اجماعی مؤقف ہ</i></b></center>
+            </div>
+        </div>
+
+</body>
+</html>

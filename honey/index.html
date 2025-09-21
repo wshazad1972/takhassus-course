@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बहुभुज आकृतियां और इमेज</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .polygon {
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            transition: transform 0.3s ease;
+        }
+        
+        .polygon:hover {
+            transform: scale(1.1);
+        }
+        
+        .polygon:nth-child(2) {
+            background-color: #e74c3c;
+        }
+        
+        .polygon:nth-child(3) {
+            background-color: #2ecc71;
+        }
+        
+        .polygon:nth-child(4) {
+            background-color: #f1c40f;
+        }
+        
+        .image-container {
+            margin-top: 20px;
+        }
+        
+        .image-container img {
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>चार बराबर बहुभुज आकृतियां</h1>
+    
+    <div class="container">
+        <div class="polygon"></div>
+        <div class="polygon"></div>
+        <div class="polygon"></div>
+        <div class="polygon"></div>
+    </div>
+    
+    <div class="image-container">
+        <img src="https://picsum.photos/seed/polygons/500/300.jpg" alt="एक सुंदर दृश्य">
+    </div>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="logo-1.png" alt="logo" />
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Products</a></li>
+
+
+                    <li><a href="cart.html">About Us</a></li>
+                    <li><a href="checkout.html">Cattegary</a></li>
+                    <li><a href="orders.html">pages</a></li>
+                    <div class="font-awesome">
+                        <div style="color: orangered;">
+                            <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+                        </div>
+                        <div style="color: yellow;"><i class="fa fa-search" aria-hidden="true"></i></div>
+                        <div style="color: orangered;"><i class="fa fa-th" aria-hidden="true"></i></div>
+                    </div>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Natural Honey</h1>
+                <h2>and beekeeping</h2>
+                <p>Honey is a natural sweetener rich in antioxidants, vitamins,
+                    and minerals,<br> offering benefits such as
+                    wound healing,
+                    and a quick energy source. </p>
+                <button>View products</button>
+            </div>
+            <div><img src="honey-photo.jpg" /></div>
+            </div>
+        </section>
+        <!-- menu -->
+        <section>
+            <div class="about">
+                <img src="images - 2025-08-24T123848.708.jpeg.jpg" alt="menu"
+                    style="width: 100%; padding:0px; margin:0px" />
+            </div>
+            <div class="about-content">
+                <h2>What we do</h2>
+                <h1>Our Services</h1>
+                <h2>^^^^^^^</h2>
+                <p>We can provide you best quality of Honey which is a natural sweetener<br>
+                    rich in antioxidants,
+                    vitamins.</p>
+            </div>
+        </section>
+        <section>
+            <div class="types">
+                <div class="polygen-image-container">
+                    <div class="polygen-image"img src="service-1-red.png" alt="type 1" >
+                    </div>
+                    <h2>Type 1</h2>
+                    <p>sfgg</p>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="menu-items">
+                <div class="menu-item">
+                    <img src="ice cream-sandwiches.jpeg" alt="ice cream sandwich" />
+                    <div class="menu-item-content">
+                        <h2>Ice Sandwiches</h2>
+                        <p>fill with ice and cream</p>
+                        <p>price 500/=PKR</p>
+
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="frozen-yoghurt.jpeg" alt="ice cream sandwich" />
+                    <div class="menu-item-content">
+                        <h2>Frozen Yoghurt</h2>
+                        <p> fill with ice and choclate</p>
+                        <p>price 800/=PKR</p>
+
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="ice-cream-bars.jpeg" alt="ice cream sandwich" />
+                    <div class="menu-item-content">
+                        <h2>Ice Bars</h2>
+                        <p>tasty and delicious </p>
+                        <p>price 6oo/=PKR</p>
+
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="ice-cream-cake.jpeg" alt="ice cream sandwich" />
+                    <div class="menu-item-content">
+                        <h2>Ice Cream Cake</h2>
+                        <p>soft and fill with ice and cream</p>
+                        <p>price 1000/=PKR</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="ice-cream-cups.jpeg" alt="ice cream sandwich" />
+                    <div class="menu-item-content">
+                        <h2>Ice Cups</h2>
+                        <p>different flavours and colors</p>
+                        <p>price 500/PKR</p>
+
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="Ice-cream-lactose.jpeg" alt="ice cream sandwich" />
+                    <div class="menu-item-content">
+                        <h2>Lactose</h2>
+                        <p>Full creamy ice cream</p>
+                        <p>price 1000/=PKR</p>
+
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="ice-cream-plant.jpeg" alt="ice cream sandwich" />
+                    <div class="menu-item-content">
+                        <h2>Ice Plant</h2>
+                        <p>grow with ice and cream</p>
+                        <p>price 500/PKR</p>
+
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="ice cream-sticks.jpeg" alt="ice cream sandwich" />
+                    <div class="menu-item-content">
+                        <h2>Ice Sticks</h2>
+                        <p>tasty and delicious</p>
+                        <p>price 400/=PKR</p>
+
+                    </div> -->
+        </div>
+        </div>
+
+
+
+
+
+        </section>
+    </main>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
+information
+Key types of honey include raw honey, which retains more beneficial compounds, and varieties like buckwheat honey (rich
+in antioxidants) and orange blossom honey (with citrus notes). While honey has therapeutic properties, it should be
+consumed in moderation due to its high sugar content, especially by individuals with diabetes.
+Honey production
+Honey production is a process where bees convert flower nectar into honey and store it in their hives.
+beekeeping classes
+Beekeeping classes teach you the art and science of managing honey bee colonies, covering essential topics from hive
+setup and equipment to bee biology, health, and seasonal management.
+Honey shop
+honey shop was founded with the mission of providing customers with a unique shopping experience that combines
+convenience, value, and exceptional service.
+Swarm removal
+While swarms are generally less aggressive, they can be unpredictable and potentially defensive, so it's best to keep
+people and pets away. -->

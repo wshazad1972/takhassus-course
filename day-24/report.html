@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Card Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9bb487;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #reportCard {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Report Card Generator</h1>
+        <div class="input-group">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" placeholder="Enter student's name">
+        </div>
+        <div class="input-group">
+            <label for="subject1">Subject 1 Marks (out of 100):</label>
+            <input type="number" id="subject1" placeholder="e.g., 85">
+        </div>
+        <div class="input-group">
+            <label for="subject2">Subject 2 Marks (out of 100):</label>
+            <input type="number" id="subject2" placeholder="e.g., 92">
+        </div>
+        <div class="input-group">
+            <label for="subject3">Subject 3 Marks (out of 100):</label>
+            <input type="number" id="subject3" placeholder="e.g., 78">
+        </div>
+        <button onclick="generateReport()">Generate Report</button>
+    </div>
+
+    <div id="reportCard">
+        <!-- Report card will be displayed here -->
+    </div>
+
+    <script>
+        function calculateGrade(percentage) {
+            if (percentage >= 90) return 'A+';
+            if (percentage >= 80) return 'A';
+            if (percentage >= 70) return 'B';
+            if (percentage >= 60) return 'C';
+            if (percentage >= 50) return 'D';
+            return 'F';
+        }
+
+        function generateReport() {
+            const name = document.getElementById('studentName').value;
+            const sub1 = parseFloat(document.getElementById('subject1').value);
+            const sub2 = parseFloat(document.getElementById('subject2').value);
+            const sub3 = parseFloat(document.getElementById('subject3').value);
+
+            // if (!name || isNaN(sub1) || isNaN(sub2) || isNaN(sub3) || sub1 < 0 || sub1 > 100 || sub2 < 0 || sub2 > 100 || sub3 < 0 || sub3 > 100) {
+            //     alert('Please fill all fields correctly. Marks should be between 0 and 100.');
+            //     return;
+            // }
+
+            const totalMarks = sub1 + sub2 + sub3;
+            const percentage = (totalMarks / 300) * 100;
+            const grade = calculateGrade(percentage);
+
+            const reportCardDiv = document.getElementById('reportCard');
+            reportCardDiv.innerHTML = `
+                <h2>Student Report Card</h2>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Subject 1:</strong> ${sub1}</p>
+                <p><strong>Subject 2:</strong> ${sub2}</p>
+                <p><strong>Subject 3:</strong> ${sub3}</p>
+                <hr>
+                <p><strong>Total Marks:</strong> ${totalMarks} / 300</p>
+                <p><strong>Percentage:</strong> ${percentage.toFixed(2)}%</p>
+                <p><strong>Grade:</strong> ${grade}</p>
+
+            `;        
+        }
+    </script>
+</body>
+</html>

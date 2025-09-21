@@ -1,0 +1,82 @@
+:root{
+    --primary-color:#555272;
+    --secondary-color:#DFE4EA;
+    --text-color:#E0E5EB ;
+}
+
+/* Correction: Use 'body' tag selector instead of '.body' class selector */
+body{
+    background-color:rgb(156, 168, 185);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    height: 100vh; /* Use viewport height to fill the screen */
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents scrollbars if content overflows */
+}
+
+.image-stack-container {
+    position: relative;
+    width: 600px;
+    height: 500px;
+}
+
+.image-card {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the card without distortion */
+}
+
+#card1 {
+    height:400px;
+    width:300px;
+    z-index: 4;
+    /* transform: rotate(-15deg); */
+    left: 0;
+    top: 20px;
+}
+
+#card2 {
+    height:600px;
+    width:200px;
+    /* z-index: 3; */
+    /* transform: rotate(-5deg); */
+    left: 120px;
+    top: 10px;
+}
+
+#card3 {
+    z-index: 2;
+    /* transform: rotate(5deg); */
+    left: 240px;
+    top: 30px;
+}
+
+#card4 {
+    z-index: 1;
+    /* transform: rotate(15deg); */
+    left: 360px;
+    top: 15px;
+}
+
+.image-card:hover {
+    z-index: 5; /* Bring to front */
+    transform: rotate(0deg) scale(1.1); /* Straighten and enlarge */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
