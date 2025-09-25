@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صدقہ فطر کیلکولیٹر</title>
+    <style>
+        body {
+            font-family: 'Noto Nastaliq Urdu', Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: right;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            color: #1a2e1e;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>صدقہ فطر</h1>
+    <div class="input-group">
+        <label for="members">گھر کے کل افراد</label>
+        <input type="number" id="members" placeholder="مثال: 5">
+    </div>
+    <div class="input-group">
+        <label for="item">کس جنس کو آپ چننا چاہتے ہیں؟</label>
+        <select id="item">
+            <option value="300">گندم (فی کس 300 روپے)</option>
+            <option value="700">جو (فی کس 700 روپے)</option>
+            <option value="1400">کھجور (فی کس 1400 روپے)</option>
+            <option value="2800">کشمش (فی کس 2800 روپے)</option>
+        </select>
+    </div>
+    <button onclick="calculateFitr()">حساب کریں</button>
+    <div id="result"></div>
+</div>
+
+<script>
+function calculateFitr() {
+    const members = document.getElementById('members').value;
+    const itemValue = document.getElementById('item').value;
+    const resultDiv = document.getElementById('result');
+
+    // اقدار کو نمبروں میں تبدیل کریں
+    const numMembers = parseInt(members);
+    const numItemValue = parseInt(itemValue);
+
+    if (isNaN(numMembers) || numMembers <= 0) {
+        resultDiv.innerText = 'براہ کرم افراد کی درست تعداد درج کریں۔';
+        resultDiv.style.color = 'red';
+    } else {
+        const totalFitr = numMembers * numItemValue;
+        resultDiv.innerText = 'کل صدقہ فطر: ' + totalFitr.toLocaleString() + ' روپے';
+        resultDiv.style.color = '#28a745';
+    }
+}
+</script>
+
+</body>
+</html>

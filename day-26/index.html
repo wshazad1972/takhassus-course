@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .card {
+        border: 1px solid black;
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <button onclick="addCards()">Add Cards</button>
+    <div id="cards"></div>
+    <script>
+        
+        function addCards(){
+            let card = document.createElement("div");
+        console.log(card);
+        card.className = "card";
+        let h1 = document.createElement("h1");
+        h1.innerText = "Lawn scarfs";
+        let p = document.createElement("p");
+        p.innerText = "Lawn scarfs are available in different prints";
+        
+        card.appendChild(h1);
+        card.appendChild(p);
+        document.getElementById("cards").appendChild(card);
+        console.log(card);}
+            
+        
+
+
+
+    </script>
+    <!-- <button onclick="addItems()">Add List Items</button>
+    <ul id="my list"></ul>
+<script>
+    function addItems(){
+    
+    let li =document.createElement("li");
+    li.innerText="This is a list item";
+    document.getElementById("my list").appendChild(li);
+    console.log(li);
+}
+</script>
+     -->
+
+    <!-- <button onclick="addHeading()">Add Input Field</button>
+    <div id="form"></div>
+    <script>
+        function addHeading(){
+        let input =document.createElement("input");
+        input.setAttribute("type","text");
+        input.setAttribute("placeholder","Enter your name");
+        document.getElementById("form").appendChild(input);
+        document.getElementById("form").appendChild(document.createElement("br"));
+        console.log(input);
+        let h1 = document.createElement("h1");
+        h1.innerText="This is a heading";
+        document.getElementById("form").appendChild(h1);
+        console.log(h1);
+    }
+
+
+
+
+
+    </script>
+
+    <button onclick="addHeading()">Add Heading</button> -->
+    <!-- <div id="box"></div>
+    <script>
+        function addHeading(){
+        let h1 = document.createElement("h1");
+        h1.innerText="This is a heading";
+        document.getElementById("box").appendChild(h1);
+        console.log(h1);}
+
+    </script> -->
+</body>
+
+</html>
